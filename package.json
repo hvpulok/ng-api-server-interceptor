@@ -1,16 +1,37 @@
 {
-  "name": "ng-api-server-interceptor-demo",
-  "version": "0.0.0",
+  "name": "@muminlife/ng-api-server-interceptor",
+  "version": "1.0.0-2",
+  "author": "Md Kamrul Hasan Pulok",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "lib": "ng build ng-api-server-interceptor --watch",
+    "build": "ng build ng-api-server-interceptor && ng build --prod",
+    "prepare": "npm run build",
+    "publish": "npm publish --access public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "dist/ng-api-server-interceptor/bundles/muminlife-ng-api-server-interceptor.umd.js",
+  "module": "dist/ng-api-server-interceptor/fesm5/muminlife-ng-api-server-interceptor.js",
+  "es2015": "dist/ng-api-server-interceptor/fesm2015/muminlife-ng-api-server-interceptor.js",
+  "esm5": "dist/ng-api-server-interceptor/esm5/muminlife-ng-api-server-interceptor.js",
+  "esm2015": "dist/ng-api-server-interceptor/esm2015/muminlife-ng-api-server-interceptor.js",
+  "fesm5": "dist/ng-api-server-interceptor/fesm5/muminlife-ng-api-server-interceptor.js",
+  "fesm2015": "dist/ng-api-server-interceptor/fesm2015/muminlife-ng-api-server-interceptor.js",
+  "typings": "dist/ng-api-server-interceptor/muminlife-ng-api-server-interceptor.d.ts",
+  "metadata": "dist/ng-api-server-interceptor/muminlife-ng-api-server-interceptor.metadata.json",
+  "sideEffects": false,
   "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "devDependencies": {
     "@angular/animations": "~8.2.11",
     "@angular/common": "~8.2.11",
     "@angular/compiler": "~8.2.11",
@@ -21,9 +42,7 @@
     "@angular/router": "~8.2.11",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
-  },
-  "devDependencies": {
+    "zone.js": "~0.9.1",
     "@angular-devkit/build-angular": "~0.803.14",
     "@angular-devkit/build-ng-packagr": "^0.803.14",
     "@angular/cli": "~8.3.14",
@@ -46,5 +65,10 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  },
+  "homepage": "https://github.com/hvpulok/ng-api-server-interceptor"
 }

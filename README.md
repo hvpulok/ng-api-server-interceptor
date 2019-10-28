@@ -59,3 +59,15 @@ export class AppModule { }
 - When you do api call through HttpClient with url `/api/users`, the interceptor will prepend the apiServer url and make the call as `http://www.mock-server.com/api/users`
 - The interceptor excludes any api call started with `http://` or `https://`. ex. `http://fonts.google.com/abcd`
 - The interceptor excludes any api call that has `/assets/` string in url. example: `/assests/i18n/en.json`
+
+## Developer Guide
+
+### Watch server:
+- In one terminal start lib compiler: `$ npm run lib`
+- In another terminal start demo compiler: `$ ng serve`
+
+## Prod Build:
+- `$ npm run build`
+
+## Npm publish
+- `$ npm publish`. This will automatically build first before publishing
