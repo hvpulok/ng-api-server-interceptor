@@ -1,0 +1,11 @@
+{
+  "name": "@muminlife/ng-api-server-interceptor",
+  "version": "1.0.0-1",
+  "author": "Md Kamrul Hasan Pulok",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  }
+}
