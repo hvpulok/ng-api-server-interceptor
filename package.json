@@ -1,6 +1,6 @@
 {
   "name": "@muminlife/ng-api-server-interceptor",
-  "version": "1.0.0-3",
+  "version": "1.0.0-4",
   "author": "Md Kamrul Hasan Pulok",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,6 @@
     "lib": "ng build ng-api-server-interceptor --watch",
     "build": "ng build ng-api-server-interceptor && ng build --prod",
     "prepare": "npm run build",
-    "publish": "npm publish --access public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -69,6 +68,9 @@
   "peerDependencies": {
     "@angular/common": "^8.2.11",
     "@angular/core": "^8.2.11"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "homepage": "https://github.com/hvpulok/ng-api-server-interceptor"
 }
